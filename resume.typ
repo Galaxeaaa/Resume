@@ -96,21 +96,29 @@ Cumulative GPA: 3.9\/4.0, GPA in Major: 4.0\/4.0 \
 - Made significant contributions to the engine's standard deferred pipeline module, focusing on performance optimization and quality improvement. Particularly enhanced the subsurface scattering component, resulting in more accurate rendering of translucent materials.
 
 
-== Publications
+== Publications and Preprints
+
+#publication(
+  title: "HotSpot: Screened Poisson Equation for Signed Distance Function Optimization",
+  authors: ("Zimo Wang*", "Cheng Wang*", "Taiki Yoshino", "Sirui Tao", "Ziyang Fu", "Tzu-Mao Li"),
+  conference: [_arXiv preprint 2024_],
+)
+
+#publication(
+  title: "ZeroRF: Zero-shot Sparse View 360° Reconstruction",
+  authors: ("Ruoxi Shi*", "Xinyue Wei*", "Cheng Wang", "Hao Su"),
+  conference: [In Proceedings of _IEEE/CVF Conference on Computer Vision and Pattern Recognition 2024_],
+)
+
+
+== Thesis
 
 #publication(
   title: "Near-Field Lighting Estimation via Ray Regression",
   authors: ("Cheng Wang", "Tzu-mao Li"),
   conference: [_Master Thesis_],
 )
-- This paper approaches fast near-field lighting estimation by training a vision transformer to predict point light positions from a single observed image, using over-parameterized representations of point lights as rays corresponding to image patches. The proposed method, trained and evaluated on a custom dataset derived from OpenRooms, outperforms naive end-to-end models in predicting light positions, achieving deviations of around 0.35 and 0.38 of the scene scale compared to 0.60 for the naive method.
-
-#publication(
-  title: "ZeroRF: Zero-shot Sparse View 360° Reconstruction",
-  authors: ("Ruoxi Shi", "Xinyue Wei", "Cheng Wang", "Hao Su"),
-  conference: [In Proceedings of _IEEE/CVF Conference on Computer Vision and Pattern Recognition 2024_],
-)
-- ZeroRF is a novel per-scene optimization method that addresses sparse view 360° reconstruction in neural field representations by integrating a tailored Deep Image Prior into a factorized NeRF representation. This approach enables efficient sparse view reconstruction without pretraining or additional regularization, achieving state-of-the-art results on benchmark datasets and extending its significance to 3D content generation and editing applications.
+- This thesis approaches fast near-field lighting estimation by training a vision transformer to predict point light positions from a single observed image, using over-parameterized representations of point lights as rays corresponding to image patches. The proposed method, trained and evaluated on a custom dataset derived from OpenRooms, outperforms naive end-to-end models in predicting light positions, achieving deviations of around 0.35 and 0.38 of the scene scale compared to 0.60 for the naive method.
 
 
 == Projects

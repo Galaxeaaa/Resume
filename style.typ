@@ -170,7 +170,7 @@
 ) = {
   pad[
     *#title* \
-    #(authors.map(author => if author == "Cheng Wang" { strong(author) } else { author }).join(", ")) \
+    #(authors.map(author => if author.find("Cheng Wang") != none { strong(author) } else { author }).join(", ")) \
     #conference
   ]
 }
