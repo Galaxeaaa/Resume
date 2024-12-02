@@ -167,9 +167,13 @@
   title: "",
   authors: [],
   conference: "",
+  url: "",
 ) = {
   pad[
-    *#title* \
+    *#title*
+    #if url != "" {
+      [ (#link("https://" + url)[link])]
+    } \
     #(authors.map(author => if author.find("Cheng Wang") != none { strong(author) } else { author }).join(", ")) \
     #conference
   ]
@@ -184,7 +188,7 @@
   pad[
     *#name*
     #if url != "" {
-      [ (#link("https://" + url)[#url])]
+      [ (#link("https://" + url)[link])]
     }
     #h(1fr) #dates \
     #role
@@ -203,6 +207,16 @@
       [ (#link("https://" + url)[#url])]
     }
     #h(1fr) #date
+  ]
+}
+
+#let award(
+  name: "",
+  year: "",
+) = {
+  pad[
+    *#name*
+    #h(1fr) #year
   ]
 }
 

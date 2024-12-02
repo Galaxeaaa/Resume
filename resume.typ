@@ -65,8 +65,7 @@ Cumulative GPA: 3.9\/4.0, GPA in Major: 4.0\/4.0 \
   company: "University of California, San Diego",
   dates: dates-helper(start-date: "Oct 2024", end-date: "Present"),
 )
-- Working on a very interesting project using a novel method to achieve robust SDF optimization from point cloud signal.
-- Submitted a paper to CVPR 2025.
+- Worked on HotSpot, a novel method to achieve robust neural SDF optimization from point cloud signal. By incorporating a regularization term inspired by the relationship between heat diffusion in absorbing media and distance functions, we designed a loss function that is both spatially and temporally stable and naturally penalizes excessive surface area. See paper link in Publications and Preprints.
 
 #work(
   title: "Research Intern",
@@ -74,7 +73,7 @@ Cumulative GPA: 3.9\/4.0, GPA in Major: 4.0\/4.0 \
   company: "SuLab, University of California, San Diego",
   dates: dates-helper(start-date: "Sep 2023", end-date: "Jan 2024"),
 )
-- Worked on ZeroRF, a novel sparse view 360° reconstruction method based on NeRF (see detail in Publications).
+- Worked on ZeroRF, a novel sparse view 360° reconstruction method based on NeRF. See paper link in Publications and Preprints.
 - ZeroRF is published in proceedings of IEEE/CVF Conference on Computer Vision and Pattern Recognition 2024.
 
 #work(
@@ -102,12 +101,14 @@ Cumulative GPA: 3.9\/4.0, GPA in Major: 4.0\/4.0 \
   title: "HotSpot: Screened Poisson Equation for Signed Distance Function Optimization",
   authors: ("Zimo Wang*", "Cheng Wang*", "Taiki Yoshino", "Sirui Tao", "Ziyang Fu", "Tzu-Mao Li"),
   conference: [_arXiv preprint 2024_],
+  url: "https://arxiv.org/abs/2411.14628",
 )
 
 #publication(
   title: "ZeroRF: Zero-shot Sparse View 360° Reconstruction",
   authors: ("Ruoxi Shi*", "Xinyue Wei*", "Cheng Wang", "Hao Su"),
   conference: [In Proceedings of _IEEE/CVF Conference on Computer Vision and Pattern Recognition 2024_],
+  url: "https://arxiv.org/abs/2312.09249",
 )
 
 
@@ -117,8 +118,8 @@ Cumulative GPA: 3.9\/4.0, GPA in Major: 4.0\/4.0 \
   title: "Near-Field Lighting Estimation via Ray Regression",
   authors: ("Cheng Wang", "Tzu-mao Li"),
   conference: [_Master Thesis_],
+  url: "https://escholarship.org/uc/item/27v4090s",
 )
-- This thesis approaches fast near-field lighting estimation by training a vision transformer to predict point light positions from a single observed image, using over-parameterized representations of point lights as rays corresponding to image patches. The proposed method, trained and evaluated on a custom dataset derived from OpenRooms, outperforms naive end-to-end models in predicting light positions, achieving deviations of around 0.35 and 0.38 of the scene scale compared to 0.60 for the naive method.
 
 
 == Projects
@@ -130,16 +131,19 @@ Cumulative GPA: 3.9\/4.0, GPA in Major: 4.0\/4.0 \
 
 #project(
   name: "Autonomous Vehicle Motion Forecasting",
+  url: "https://github.com/Galaxeaaa/cse251b-project",
 )
-- Used deep learning models to forecast autonomous vehicle motion, predicting the positions of tracked objects three seconds into the future. The dataset includes trajectories from Pittsburgh and Miami, and the models incorporate inputs like positions and velocities over a short time frame. Explored different machine learning models including Linear Regression, LSTM, and Encoder-Decoder with Attention Mechanism. Based on extensive experiments, the LSTM model with positional data performed best, although improvements are suggested for better lane prediction and generalization.
+- Developed deep learning models to forecast autonomous vehicle motion, predicting object positions three seconds ahead. Incorporated positions and velocities in real-world vehicle trajectories dataset. Explored Linear Regression, LSTM, and Encoder-Decoder with Attention Mechanism. LSTM with positional data performed best, with suggested improvements for lane prediction and generalization.
 
 #project(
   name: "Volumetric Path Tracer",
+  url: "https://github.com/Galaxeaaa/CSE272-lajolla",
 )
 - Implemented a volumetric path tracer module based on the educational physically based renderer "lajolla", which efficiently handles multiple chromatic heterogeneous volumes and accurately simulates absorption and multiple scattering effects through the integration of phase function sampling and next event estimation techniques, resulting in more realistic and physically accurate volumetric renderings.
 
 #project(
   name: "Real-Time Texture-Space Subsurface Scattering",
+  url: "https://github.com/Galaxeaaa/tssss",
 )
 - Implemented an innovative and efficient method for real-time texture-space subsurface scattering, utilizing convolution of radiance maps and weight kernels in texture space. Optimized performance by pre-calculating weight kernels with Burley's normalized diffusion profile and applying wavelet transformation, resulting in a significant reduction in convolution time complexity.
 - Awarded the Outstanding Graduation Thesis of Zhejiang University Undergraduates in 2022.
@@ -152,9 +156,29 @@ Cumulative GPA: 3.9\/4.0, GPA in Major: 4.0\/4.0 \
 
 #project(
   name: "Tiled Forward Rendering",
+  url: "https://github.com/Galaxeaaa/ForwardPlus",
 )
 - Implemented both tiled forward rendering and tiled deferred rendering pipelines based on research papers, demonstrating a deep understanding of modern real-time rendering techniques.
 - Optimized the light culling pass through the implementation of multiple frustum division strategies and efficient light-frustum intersection algorithms.
+
+
+== Awards
+
+#award(
+  name: "Outstanding Graduates of Zhejiang University",
+  year: "2022",
+)
+
+#award(
+  name: "Outstanding Graduation Thesis Award of Zhejiang University Undergraduates",
+  year: "2022",
+)
+
+#award(
+  name: "Chu Kochen Certificate of Honor",
+  year: "2022",
+)
+
 
 == Skills
 - *Programming Languages*: C/C++, Python, JavaScript, HTML/CSS, Bash
