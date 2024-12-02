@@ -165,11 +165,6 @@ Cumulative GPA: 3.9\/4.0, GPA in Major: 4.0\/4.0 \
 == Awards
 
 #award(
-  name: "Outstanding Graduates of Zhejiang University",
-  year: "2022",
-)
-
-#award(
   name: "Outstanding Graduation Thesis Award of Zhejiang University Undergraduates",
   year: "2022",
 )
