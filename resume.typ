@@ -38,7 +38,7 @@
 == Education
 
 #edu(
-  institution: "University of California, San Diego",
+  institution: "University of California San Diego",
   location: "San Diego, CA",
   dates: dates-helper(start-date: "Sep 2022", end-date: "June 2024"),
   degree: "Master of Science, Computer Science",
@@ -62,17 +62,19 @@ Cumulative GPA: 3.9\/4.0, GPA in Major: 4.0\/4.0 \
 #work(
   title: "Research Assistant",
   location: "San Diego, CA",
-  company: "University of California, San Diego",
+  company: "University of California San Diego",
   dates: dates-helper(start-date: "Oct 2024", end-date: "Present"),
 )
-- Worked on HotSpot, a novel method to achieve robust neural SDF optimization from point cloud signal. By incorporating a regularization term inspired by the relationship between heat diffusion in absorbing media and distance functions, we designed a loss function that is both spatially and temporally stable and naturally penalizes excessive surface area. See paper link in Publications and Preprints.
+- Advised by Prof. Tzu-mao Li.
+- Worked on HotSpot, a novel method to achieve robust neural SDF optimization from point cloud signal inspired by the relationship between heat diffusion in absorbing media and distance functions. See paper link in Publications and Preprints.
 
 #work(
   title: "Research Intern",
   location: "San Diego, CA",
-  company: "SuLab, University of California, San Diego",
+  company: "SuLab, University of California San Diego",
   dates: dates-helper(start-date: "Sep 2023", end-date: "Jan 2024"),
 )
+- Advised by Prof. Hao Su.
 - Worked on ZeroRF, a novel sparse view 360° reconstruction method based on NeRF. See paper link in Publications and Preprints.
 - ZeroRF is published in proceedings of IEEE/CVF Conference on Computer Vision and Pattern Recognition 2024.
 
@@ -82,7 +84,8 @@ Cumulative GPA: 3.9\/4.0, GPA in Major: 4.0\/4.0 \
   company: "Electronic Arts",
   dates: dates-helper(start-date: "Jun 2023", end-date: "Sep 2023"),
 )
-- Developed an advanced decal rendering pipeline for a customized Unreal Engine 5, incorporating support for multiple material effects and dynamic material properties on attached decals. This enhancement significantly improved visual fidelity and expanded the creative possibilities for environment artists.
+- Mentored by Steve Karolewics and Alex Lemke.
+- Developed a decal rendering pipeline for a customized Unreal Engine 5, with support for multiple material effects and dynamic material properties on attached decals. This enhancement significantly improved visual fidelity and expanded the creative possibilities for environment artists.
 - Conducted in-depth research and documentation maintenance for Unreal Engine's Lumen global illumination system. Provided comprehensive technical analysis and up-to-date documentation, enabling the development team to effectively utilize and optimize the system's capabilities in various projects.
 
 #work(
