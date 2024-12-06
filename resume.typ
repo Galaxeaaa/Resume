@@ -19,7 +19,7 @@
   linkedin: linkedin,
   personal-site: personal-site,
   accent-color: "#0038A8",
-  font: "New Computer Modern",
+  font: "libertinus serif",
 )
 
 /*
@@ -63,7 +63,7 @@ Cumulative GPA: 3.9\/4.0, GPA in Major: 4.0\/4.0 \
   title: "Research Assistant",
   location: "San Diego, CA",
   company: "University of California San Diego",
-  dates: dates-helper(start-date: "Oct 2024", end-date: "Present"),
+  dates: dates-helper(start-date: "Aug 2024", end-date: "Present"),
 )
 - Advised by Prof. Tzu-mao Li.
 - Worked on HotSpot, a novel method to achieve robust neural SDF optimization from point cloud signal inspired by the relationship between heat diffusion in absorbing media and distance functions. See paper link in Publications and Preprints.
