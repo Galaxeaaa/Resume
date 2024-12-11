@@ -8,7 +8,7 @@
   phone: "",
   personal-site: "",
   accent-color: "#000000",
-  font: "New Computer Modern",
+  font: "",
   body,
 ) = {
 
