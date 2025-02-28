@@ -103,7 +103,7 @@ Cumulative GPA: 3.9\/4.0, GPA in Major: 4.0\/4.0 \
 #publication(
   title: "HotSpot: Screened Poisson Equation for Signed Distance Function Optimization",
   authors: ("Zimo Wang*", "Cheng Wang*", "Taiki Yoshino", "Sirui Tao", "Ziyang Fu", "Tzu-Mao Li"),
-  conference: [_arXiv preprint 2024_],
+  conference: [In Proceedings of _IEEE/CVF Conference on Computer Vision and Pattern Recognition 2025_],
   url: "https://arxiv.org/abs/2411.14628",
 )
 
