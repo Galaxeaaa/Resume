@@ -60,10 +60,18 @@ Cumulative GPA: 3.9\/4.0, GPA in Major: 4.0\/4.0 \
 == Work Experience
 
 #work(
+  title: "Compute Vision Research Engineer",
+  location: "Remote",
+  company: "Dandy",
+  dates: dates-helper(start-date: "Apr 2025", end-date: "Now"),
+)
+- Starting soon.
+
+#work(
   title: "Research Assistant",
   location: "San Diego, CA",
   company: "University of California San Diego",
-  dates: dates-helper(start-date: "Aug 2024", end-date: "Present"),
+  dates: dates-helper(start-date: "Aug 2024", end-date: "Apr 2025"),
 )
 - Advised by Prof. Tzu-mao Li.
 - Worked on HotSpot, a novel method to achieve robust neural SDF optimization from point cloud signal inspired by the relationship between heat diffusion in absorbing media and distance functions. See paper link in Publications and Preprints.
@@ -85,8 +93,8 @@ Cumulative GPA: 3.9\/4.0, GPA in Major: 4.0\/4.0 \
   dates: dates-helper(start-date: "Jun 2023", end-date: "Sep 2023"),
 )
 - Mentored by Steve Karolewics and Alex Lemke.
-- Developed a decal rendering pipeline for a customized Unreal Engine 5, with support for multiple material effects and dynamic material properties on attached decals. This enhancement significantly improved visual fidelity and expanded the creative possibilities for environment artists.
-- Conducted in-depth research and documentation maintenance for Unreal Engine's Lumen global illumination system. Provided comprehensive technical analysis and up-to-date documentation, enabling the development team to effectively utilize and optimize the system's capabilities in various projects.
+- As a Rendering Intern on the Star Wars FPS team at Respawn Entertainment, I learned to use and modify Unreal Engine 5, collaborating with the engineering and art teams to improve decal rendering support. I adapted an existing tiled decal pass into separate pre-GBuffer and post-GBuffer passes, to aid efforts toward more accurate and complex material blending needs by the art team.
+- After this project was completed, I used the remaining time available to investigate Lumen global illumination, including documenting the costs and configurations of far field lighting and reflections.
 
 #work(
   title: "Software Engineer Intern",
@@ -157,12 +165,12 @@ Cumulative GPA: 3.9\/4.0, GPA in Major: 4.0\/4.0 \
 - Developed a 3D third-person shooting game inspired by Assassin's Creed using Unreal Engine 4, showcasing advanced game development techniques and engine proficiency.
 - Collaborated in a five-person team, taking primary responsibility for scene and level design, enemy animation and AI behavior design, and special effects design.
 
-#project(
-  name: "Tiled Forward Rendering",
-  url: "https://github.com/Galaxeaaa/ForwardPlus",
-)
-- Implemented both tiled forward rendering and tiled deferred rendering pipelines based on research papers, demonstrating a deep understanding of modern real-time rendering techniques.
-- Optimized the light culling pass through the implementation of multiple frustum division strategies and efficient light-frustum intersection algorithms.
+// #project(
+//   name: "Tiled Forward Rendering",
+//   url: "https://github.com/Galaxeaaa/ForwardPlus",
+// )
+// - Implemented both tiled forward rendering and tiled deferred rendering pipelines based on research papers, demonstrating a deep understanding of modern real-time rendering techniques.
+// - Optimized the light culling pass through the implementation of multiple frustum division strategies and efficient light-frustum intersection algorithms.
 
 
 == Awards
