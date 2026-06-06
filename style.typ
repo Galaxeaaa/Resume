@@ -154,11 +154,26 @@
   dates: "",
   company: "",
   location: "",
+  employer-address: "",
+  url: "",
 ) = {
+  let bottom-left-content = if employer-address != "" {
+    [
+      #company\
+      #set text(size: 9pt)
+      #employer-address
+    ]
+  } else {
+    if url != "" {
+      link("https://" + url)[#company]
+    } else {
+      company
+    }
+  }
   generic-two-by-two(
     top-left: strong(title),
     top-right: dates,
-    bottom-left: company,
+    bottom-left: bottom-left-content,
     bottom-right: emph(location),
   )
 }

@@ -60,12 +60,23 @@ Cumulative GPA: 3.9\/4.0, GPA in Major: 4.0\/4.0 \
 == Work Experience
 
 #work(
-  title: "Compute Vision Research Engineer",
+  title: "Computer Vision Research Engineer",
   location: "Remote",
   company: "Dandy",
-  dates: dates-helper(start-date: "Apr 2025", end-date: "Now"),
+  url: "www.meetdandy.com",
+  dates: dates-helper(start-date: "Apr 2025", end-date: "June 2026"),
 )
-- Starting soon.
+- Developed a gradient-based optimization framework using differentiable rendering (Mitsuba) to recover physical material parameters of dental crowns from multi-view photographs, jointly optimizing volumetric properties (albedo, extinction coefficient, phase function) and surface BSDF of ceramic restorations.
+
+  - Targeted photorealistic pre-manufacturing visualization of crown appearance under arbitrary lighting, enabling patient preview before fabrication to reduce costly remakes and improve treatment satisfaction.
+
+- Independently designed and built a camera-based color measurement and calibration app (Python/PyQt, little-cms), using a controlled box setup with black/white/background reference captures to eliminate lighting and background effects — enabling accurate color measurement with a standard camera in place of costly, time-consuming spectrophotometers.
+
+  - Validated on 9,000+ color samples with >95% within ΔE < 0.5 of professional spectrometer readings; contributed 16-bit color conversion support to the open-source cmm-16bit library; produced a labeled dataset enabling high-fidelity ink-to-print color space mapping for crown fabrication model training.
+
+- Deployed a shade quality-control ML model (PyTorch Lightning) to a dental crown production line, integrating with PLC hardware, coordinating with vendors to resolve network connectivity issues, and synchronizing system timing using shadow mode to minimize disruption to the existing pipeline.
+
+  - Diagnosed two independent training data quality issues via statistical analysis of per-image Lab values: (1) a bimodal L-value distribution caused by inconsistent ambient lighting across imaging devices — resolved by developing a color calibration algorithm and driving calibration hardware installation, improving recall from 0.70 → 0.90; (2) an anomalous temporal data segment whose removal improved precision from 0.80 → 0.96; enabled scalable model deployment across all production lines.
 
 #work(
   title: "Research Assistant",
@@ -74,7 +85,7 @@ Cumulative GPA: 3.9\/4.0, GPA in Major: 4.0\/4.0 \
   dates: dates-helper(start-date: "Aug 2024", end-date: "Apr 2025"),
 )
 - Advised by Prof. Tzu-mao Li.
-- Worked on HotSpot, a novel method to achieve robust neural SDF optimization from point cloud signal inspired by the relationship between heat diffusion in absorbing media and distance functions. See paper link in Publications and Preprints.
+- Co-authored #link("https://zeamoxwang.github.io/HotSpot-CVPR25/")[HotSpot], a novel method to achieve robust neural SDF optimization from point cloud signal inspired by the relationship between heat diffusion in absorbing media and distance functions. See paper link in Publications and Preprints.
 
 #work(
   title: "Research Intern",
@@ -83,18 +94,19 @@ Cumulative GPA: 3.9\/4.0, GPA in Major: 4.0\/4.0 \
   dates: dates-helper(start-date: "Sep 2023", end-date: "Jan 2024"),
 )
 - Advised by Prof. Hao Su.
-- Worked on ZeroRF, a novel sparse view 360° reconstruction method based on NeRF. See paper link in Publications and Preprints.
+- Contributed to #link("https://arxiv.org/abs/2312.09249")[ZeroRF], a novel sparse view 360° reconstruction method based on NeRF. See paper link in Publications and Preprints.
 - ZeroRF is published in proceedings of IEEE/CVF Conference on Computer Vision and Pattern Recognition 2024.
 
 #work(
   title: "Software Engineer Intern",
-  location: "Redwood City, CA",
+  location: "Remote",
   company: "Electronic Arts",
+  url: "www.ea.com",
   dates: dates-helper(start-date: "Jun 2023", end-date: "Sep 2023"),
 )
 - Mentored by Steve Karolewics and Alex Lemke.
-- As a Rendering Intern on the Star Wars FPS team at Respawn Entertainment, I learned to use and modify Unreal Engine 5, collaborating with the engineering and art teams to improve decal rendering support. I adapted an existing tiled decal pass into separate pre-GBuffer and post-GBuffer passes, to aid efforts toward more accurate and complex material blending needs by the art team.
-- After this project was completed, I used the remaining time available to investigate Lumen global illumination, including documenting the costs and configurations of far field lighting and reflections.
+- As a Rendering Intern on the Star Wars FPS team at Respawn Entertainment, learned to use and modify Unreal Engine 5, collaborating with the engineering and art teams to improve decal rendering support. Adapted an existing tiled decal pass into separate pre-GBuffer and post-GBuffer passes, to aid efforts toward more accurate and complex material blending needs by the art team.
+- After this project was completed, used the remaining time available to investigate Lumen global illumination, including documenting the costs and configurations of far field lighting and reflections.
 
 #work(
   title: "Software Engineer Intern",
@@ -109,16 +121,23 @@ Cumulative GPA: 3.9\/4.0, GPA in Major: 4.0\/4.0 \
 == Publications and Preprints
 
 #publication(
+  title: "A Generalizable Light Transport 3D Embedding for Global Illumination",
+  authors: ("Bing Xu", "Mukund Varma T", "Cheng Wang", "Tzumao Li", "Lifan Wu", "Bartlomiej Wronski", "Ravi Ramamoorthi", "Marco Salvi"),
+  conference: [In Proceedings of _ACM SIGGRAPH 2026_],
+  url: "https://arxiv.org/abs/2510.18189",
+)
+
+#publication(
   title: "HotSpot: Screened Poisson Equation for Signed Distance Function Optimization",
   authors: ("Zimo Wang*", "Cheng Wang*", "Taiki Yoshino", "Sirui Tao", "Ziyang Fu", "Tzu-Mao Li"),
-  conference: [In Proceedings of _IEEE/CVF Conference on Computer Vision and Pattern Recognition 2025_],
+  conference: [In Proceedings of _CVPR 2025_],
   url: "https://arxiv.org/abs/2411.14628",
 )
 
 #publication(
   title: "ZeroRF: Zero-shot Sparse View 360° Reconstruction",
   authors: ("Ruoxi Shi*", "Xinyue Wei*", "Cheng Wang", "Hao Su"),
-  conference: [In Proceedings of _IEEE/CVF Conference on Computer Vision and Pattern Recognition 2024_],
+  conference: [In Proceedings of _CVPR 2024_],
   url: "https://arxiv.org/abs/2312.09249",
 )
 
@@ -172,21 +191,8 @@ Cumulative GPA: 3.9\/4.0, GPA in Major: 4.0\/4.0 \
 // - Implemented both tiled forward rendering and tiled deferred rendering pipelines based on research papers, demonstrating a deep understanding of modern real-time rendering techniques.
 // - Optimized the light culling pass through the implementation of multiple frustum division strategies and efficient light-frustum intersection algorithms.
 
-
-== Awards
-
-#award(
-  name: "Outstanding Graduation Thesis Award of Zhejiang University Undergraduates",
-  year: "2022",
-)
-
-#award(
-  name: "Chu Kochen Certificate of Honor",
-  year: "2022",
-)
-
-
 == Skills
-- *Programming Languages*: C/C++, Python, JavaScript, HTML/CSS, Bash
-- *Technologies*: PyTorc, Git, Docker, Kubernetes, OpenGL, Unreal Engine, Blender, React, Tailwind CSS
-- *Interests*: Badminton, Computer Games, Classical Music, Cooking
+- *Languages*: Python, C/C++, JavaScript, HTML/CSS, Bash
+- *ML / CV*: PyTorch, PyTorch Lightning, OpenCV
+- *Rendering*: Godot, Unreal Engine, Mitsuba, OpenGL, Blender
+- *Tools*: AI-assisted development (Claude Code, Cursor), Git, Docker, Kubernetes, Linux, Weights & Biases, TensorBoard, React, Tailwind CSS
