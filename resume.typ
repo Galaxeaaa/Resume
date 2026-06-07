@@ -35,28 +35,6 @@
 * #generic-two-by-two(top-left: "", top-right: "", bottom-left: "", bottom-right: "")
 * #generic-one-by-two(left: "", right: "")
 */
-== Education
-
-#edu(
-  institution: "University of California San Diego",
-  location: "San Diego, CA",
-  dates: dates-helper(start-date: "Sep 2022", end-date: "June 2024"),
-  degree: "Master of Science, Computer Science",
-)
-Advisor: Prof. Tzu-mao Li \
-Cumulative GPA: 4.0\/4.0 \
-
-#edu(
-  institution: "Zhejiang University",
-  location: "Hangzhou, Zhejiang, China",
-  dates: dates-helper(start-date: "Sep 2018", end-date: "June 2022"),
-  degree: "Bachelor of Engineering, Computer Science and Technology",
-)
-Chu Kochen Honors College \
-Advisor: Prof. Rui Wang \
-Cumulative GPA: 3.9\/4.0, GPA in Major: 4.0\/4.0 \
-
-
 == Work Experience
 
 #work(
@@ -70,13 +48,14 @@ Cumulative GPA: 3.9\/4.0, GPA in Major: 4.0\/4.0 \
 
   - Targeted photorealistic pre-manufacturing visualization of crown appearance under arbitrary lighting, enabling patient preview before fabrication to reduce costly remakes and improve treatment satisfaction.
 
+- Deployed a shade quality-control ML model (PyTorch Lightning) to a dental crown production line, integrating with PLC hardware, coordinating with vendors to resolve network connectivity issues, and synchronizing system timing using shadow mode to minimize disruption to the existing pipeline.
+
+  - Diagnosed two independent training data quality issues via statistical analysis of per-image Lab values: (1) a bimodal L-value distribution caused by inconsistent ambient lighting across imaging devices — resolved by developing a color calibration algorithm and driving calibration hardware installation, improving recall from 0.70 → 0.90; (2) an anomalous temporal data segment whose removal improved precision from 0.80 → 0.96; enabled scalable model deployment across all production lines.
+
 - Independently designed and built a camera-based color measurement and calibration app (Python/PyQt, little-cms), using a controlled box setup with black/white/background reference captures to eliminate lighting and background effects — enabling accurate color measurement with a standard camera in place of costly, time-consuming spectrophotometers.
 
   - Validated on 9,000+ color samples with >95% within ΔE < 0.5 of professional spectrometer readings; contributed 16-bit color conversion support to the open-source cmm-16bit library; produced a labeled dataset enabling high-fidelity ink-to-print color space mapping for crown fabrication model training.
 
-- Deployed a shade quality-control ML model (PyTorch Lightning) to a dental crown production line, integrating with PLC hardware, coordinating with vendors to resolve network connectivity issues, and synchronizing system timing using shadow mode to minimize disruption to the existing pipeline.
-
-  - Diagnosed two independent training data quality issues via statistical analysis of per-image Lab values: (1) a bimodal L-value distribution caused by inconsistent ambient lighting across imaging devices — resolved by developing a color calibration algorithm and driving calibration hardware installation, improving recall from 0.70 → 0.90; (2) an anomalous temporal data segment whose removal improved precision from 0.80 → 0.96; enabled scalable model deployment across all production lines.
 
 #work(
   title: "Research Assistant",
@@ -85,7 +64,8 @@ Cumulative GPA: 3.9\/4.0, GPA in Major: 4.0\/4.0 \
   dates: dates-helper(start-date: "Aug 2024", end-date: "Apr 2025"),
 )
 - Advised by Prof. Tzu-mao Li.
-- Co-authored #link("https://zeamoxwang.github.io/HotSpot-CVPR25/")[HotSpot], a novel method to achieve robust neural SDF optimization from point cloud signal inspired by the relationship between heat diffusion in absorbing media and distance functions. See paper link in Publications and Preprints.
+- Co-authored #link("https://zeamoxwang.github.io/HotSpot-CVPR25/")[HotSpot], a novel method to achieve robust neural SDF optimization from point cloud signal inspired by the relationship between heat diffusion in absorbing media and distance functions, published in proceedings of CVPR 2025.
+- Contributed to #link("https://arxiv.org/abs/2510.18189")[A Generalizable Light Transport 3D Embedding for Global Illumination], enabling global light transport modeling on millions of triangles, We learn a scalable 3D embedding with point clouds and linear-complexity transformers to overcome memory bottlenecks
 
 #work(
   title: "Research Intern",
@@ -94,8 +74,7 @@ Cumulative GPA: 3.9\/4.0, GPA in Major: 4.0\/4.0 \
   dates: dates-helper(start-date: "Sep 2023", end-date: "Jan 2024"),
 )
 - Advised by Prof. Hao Su.
-- Contributed to #link("https://arxiv.org/abs/2312.09249")[ZeroRF], a novel sparse view 360° reconstruction method based on NeRF. See paper link in Publications and Preprints.
-- ZeroRF is published in proceedings of IEEE/CVF Conference on Computer Vision and Pattern Recognition 2024.
+- Contributed to #link("https://arxiv.org/abs/2312.09249")[ZeroRF], a novel sparse view 360° reconstruction method based on NeRF, published in proceedings of CVPR 2024.
 
 #work(
   title: "Software Engineer Intern",
@@ -150,6 +129,30 @@ Cumulative GPA: 3.9\/4.0, GPA in Major: 4.0\/4.0 \
   conference: [_Master Thesis_],
   url: "https://escholarship.org/uc/item/27v4090s",
 )
+
+
+== Education
+
+#edu(
+  institution: "University of California San Diego",
+  location: "San Diego, CA",
+  dates: dates-helper(start-date: "Sep 2022", end-date: "June 2024"),
+  degree: "Master of Science, Computer Science",
+)
+Advisor: Prof. Tzu-mao Li \
+Cumulative GPA: 4.0\/4.0 \
+
+#edu(
+  institution: "Zhejiang University",
+  location: "Hangzhou, Zhejiang, China",
+  dates: dates-helper(start-date: "Sep 2018", end-date: "June 2022"),
+  degree: "Bachelor of Engineering, Computer Science and Technology",
+)
+Chu Kochen Honors College \
+Advisor: Prof. Rui Wang \
+Cumulative GPA: 3.9\/4.0, GPA in Major: 4.0\/4.0 \
+
+
 
 
 == Projects
