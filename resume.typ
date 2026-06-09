@@ -44,17 +44,20 @@
   url: "www.meetdandy.com",
   dates: dates-helper(start-date: "Apr 2025", end-date: "June 2026"),
 )
-- Developed a gradient-based optimization framework using differentiable rendering (Mitsuba) to recover physical material parameters of dental crowns from multi-view photographs, jointly optimizing volumetric properties (albedo, extinction coefficient, phase function) and surface BSDF of ceramic restorations.
 
-  - Targeted photorealistic pre-manufacturing visualization of crown appearance under arbitrary lighting, enabling patient preview before fabrication to reduce costly remakes and improve treatment satisfaction.
+- Contributed to the prototyping and production deployment of a shade quality-control ML classification model (PyTorch Lightning) on a dental crown manufacturing line, taking ownership of the data pipeline.
 
-- Deployed a shade quality-control ML model (PyTorch Lightning) to a dental crown production line, integrating with PLC hardware, coordinating with vendors to resolve network connectivity issues, and synchronizing system timing using shadow mode to minimize disruption to the existing pipeline.
+  Diagnosed a bimodal L-value distribution in training data caused by inconsistent ambient lighting across imaging devices. Developed a color calibration algorithm, drove calibration hardware installation across imaging stations, and re-curated training data — improving recall from ~0.7 to ~0.9 at fixed classification threshold and enabling scalable rollout across all production lines.
 
-  - Diagnosed two independent training data quality issues via statistical analysis of per-image Lab values: (1) a bimodal L-value distribution caused by inconsistent ambient lighting across imaging devices — resolved by developing a color calibration algorithm and driving calibration hardware installation, improving recall from 0.70 → 0.90; (2) an anomalous temporal data segment whose removal improved precision from 0.80 → 0.96; enabled scalable model deployment across all production lines.
+- Led research-to-prototype development of a gradient-based optimization framework using differentiable rendering (Mitsuba) to recover physical material parameters of dental crowns from multi-view photographs, jointly optimizing volumetric properties (albedo, extinction coefficient, phase function) and surface BSDF.
 
-- Independently designed and built a camera-based color measurement and calibration app (Python/PyQt, little-cms), using a controlled box setup with black/white/background reference captures to eliminate lighting and background effects — enabling accurate color measurement with a standard camera in place of costly, time-consuming spectrophotometers.
+  Targeted photorealistic pre-manufacturing visualization of crown appearance under arbitrary lighting, enabling patient preview before fabrication to reduce costly remakes and improve treatment satisfaction.
 
-  - Validated on 9,000+ color samples with >95% within ΔE < 0.5 of professional spectrometer readings; contributed 16-bit color conversion support to the open-source cmm-16bit library; produced a labeled dataset enabling high-fidelity ink-to-print color space mapping for crown fabrication model training.
+- Independently built and deployed a cross-platform (Mac/Windows) camera-based color measurement and calibration app (Python/PyQt, little-cms), based on a design co-developed with a color science expert, using a controlled box setup with black/white/background reference captures to eliminate lighting and background effects, replacing costly, time-consuming spectrophotometers and producing a labeled dataset for high-fidelity ink-to-print color space mapping.
+
+  Validated on 9,000+ color samples with >95% within ΔE < 0.5 of professional spectrometer readings.
+  
+  Contributed 16-bit color conversion support to the open-source cmm-16bit library. 
 
 
 #work(
@@ -65,7 +68,7 @@
 )
 - Advised by Prof. Tzu-mao Li.
 - Co-authored #link("https://zeamoxwang.github.io/HotSpot-CVPR25/")[HotSpot], a novel method to achieve robust neural SDF optimization from point cloud signal inspired by the relationship between heat diffusion in absorbing media and distance functions, published in proceedings of CVPR 2025.
-- Contributed to #link("https://arxiv.org/abs/2510.18189")[A Generalizable Light Transport 3D Embedding for Global Illumination], enabling global light transport modeling on millions of triangles, We learn a scalable 3D embedding with point clouds and linear-complexity transformers to overcome memory bottlenecks
+- Contributed to #link("https://arxiv.org/abs/2510.18189")[A Generalizable Light Transport 3D Embedding for Global Illumination], which enabled global light transport modeling on millions of triangles by learning a scalable 3D embedding with point clouds and linear-complexity transformers to overcome memory bottlenecks.
 
 #work(
   title: "Research Intern",
@@ -84,17 +87,17 @@
   dates: dates-helper(start-date: "Jun 2023", end-date: "Sep 2023"),
 )
 - Mentored by Steve Karolewics and Alex Lemke.
-- As a Rendering Intern on the Star Wars FPS team at Respawn Entertainment, learned to use and modify Unreal Engine 5, collaborating with the engineering and art teams to improve decal rendering support. Adapted an existing tiled decal pass into separate pre-GBuffer and post-GBuffer passes, to aid efforts toward more accurate and complex material blending needs by the art team.
-- After this project was completed, used the remaining time available to investigate Lumen global illumination, including documenting the costs and configurations of far field lighting and reflections.
+- Used and modified Unreal Engine 5 as a rendering intern on the Star Wars FPS team at Respawn Entertainment, collaborating with engineering and art teams to improve decal rendering support. Adapted an existing tiled decal pass into separate pre-GBuffer and post-GBuffer passes to enable more accurate and complex material blending for the art team.
+- In remaining internship time, investigated Lumen global illumination, documenting costs and configurations of far-field lighting and reflections.
 
 #work(
-  title: "Software Engineer Intern",
+  title: "Rendering Engine Engineer Intern",
   location: "Hangzhou, Zhejiang, China",
   company: "RaysEngine Tech Co. LTD",
+  url: "www.raysengine.com",
   dates: dates-helper(start-date: "Dec 2021", end-date: "Jun 2022"),
 )
-- Conducted advanced research and development on digital human technology, specializing in skin rendering techniques. Implemented and optimized an improved texture space subsurface scattering algorithm, enhancing the visual fidelity of the company's rendering engine.
-- Made significant contributions to the engine's standard deferred pipeline module, focusing on performance optimization and quality improvement. Particularly enhanced the subsurface scattering component, resulting in more accurate rendering of translucent materials.
+- Implemented an improved texture-space subsurface scattering algorithm for digital human skin rendering, accelerating computation via wavelet transformation and a shared scattering kernel map.
 
 
 == Publications and Preprints
@@ -178,7 +181,7 @@ Cumulative GPA: 3.9\/4.0, GPA in Major: 4.0\/4.0 \
   name: "Real-Time Texture-Space Subsurface Scattering",
   url: "https://github.com/Galaxeaaa/tssss",
 )
-- Implemented an innovative and efficient method for real-time texture-space subsurface scattering, utilizing convolution of radiance maps and weight kernels in texture space. Optimized performance by pre-calculating weight kernels with Burley's normalized diffusion profile and applying wavelet transformation, resulting in a significant reduction in convolution time complexity.
+- Implemented an efficient real-time texture-space subsurface scattering method, utilizing convolution of radiance maps and weight kernels in texture space. Optimized performance by pre-calculating weight kernels with Burley's normalized diffusion profile and applying wavelet transformation, resulting in a significant reduction in convolution time complexity.
 - Awarded the Outstanding Graduation Thesis of Zhejiang University Undergraduates in 2022.
 
 #project(
