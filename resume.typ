@@ -45,7 +45,7 @@
   dates: dates-helper(start-date: "Apr 2025", end-date: "June 2026"),
 )
 
-- Contributed to the prototyping and production deployment of a shade quality-control ML classification model (PyTorch Lightning) on a dental crown manufacturing line, taking ownership of the data pipeline.
+- Contributed to the prototyping and production deployment of a shade quality-control ML classification model (PyTorch Lightning, CNN) on a dental crown manufacturing line, taking ownership of the data pipeline.
 
   Diagnosed a bimodal L-value distribution in training data caused by inconsistent ambient lighting across imaging devices. Developed a color calibration algorithm, drove calibration hardware installation across imaging stations, and re-curated training data — improving recall from ~0.7 to ~0.9 at fixed classification threshold and enabling scalable rollout across all production lines.
 
