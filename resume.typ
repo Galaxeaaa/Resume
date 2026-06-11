@@ -91,7 +91,7 @@
 - In remaining internship time, investigated Lumen global illumination, documenting costs and configurations of far-field lighting and reflections.
 
 #work(
-  title: "Rendering Engine Engineer Intern",
+  title: "Rendering Engineer Intern",
   location: "Hangzhou, Zhejiang, China",
   company: "RaysEngine Tech Co. LTD",
   url: "www.raysengine.com",
