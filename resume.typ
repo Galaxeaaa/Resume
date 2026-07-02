@@ -190,6 +190,12 @@ Cumulative GPA: 3.9\/4.0, GPA in Major: 4.0\/4.0 \
 - Developed a 3D third-person shooting game inspired by Assassin's Creed using Unreal Engine 4, showcasing advanced game development techniques and engine proficiency.
 - Collaborated in a five-person team, taking primary responsibility for scene and level design, enemy animation and AI behavior design, and special effects design.
 
+#project(
+  name: "Petiu: Pet farewell service system",
+)
+- Developed the frontend of an iOS App "Petiu" written in Swift and SwiftUI, targeting to provide a platform for pet owners to commemorate their deceased pets through virtual memorials and farewell services.
+- Awarded Third Prize in the China Collegiate Computing Contest -- Mobile Application Innovation Contest held by Apple and Zhejiang University in 2021.
+
 // #project(
 //   name: "Tiled Forward Rendering",
 //   url: "https://github.com/Galaxeaaa/ForwardPlus",
@@ -198,7 +204,7 @@ Cumulative GPA: 3.9\/4.0, GPA in Major: 4.0\/4.0 \
 // - Optimized the light culling pass through the implementation of multiple frustum division strategies and efficient light-frustum intersection algorithms.
 
 == Skills
-- *Languages*: Python, C/C++, JavaScript, HTML/CSS, Bash
-- *ML / CV*: PyTorch, PyTorch Lightning, OpenCV
+- *Languages*: Python, C/C++, Swift, JavaScript, HTML/CSS, Bash
+- *ML / CV*: PyTorch, PyTorch Lightning, OpenCV, CUDA
 - *Rendering*: Godot, Unreal Engine, Mitsuba, OpenGL, Blender
 - *Tools*: AI-assisted development (Claude Code, Cursor), Git, Docker, Kubernetes, Linux, Weights & Biases, TensorBoard, React, Tailwind CSS
