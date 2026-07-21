@@ -205,7 +205,7 @@ Cumulative GPA: 3.9\/4.0, GPA in Major: 4.0\/4.0 \
 
 == Skills
 - *General*: Data structures and algorithms, Probability and statistics, Linear algebra, Optimization
-- *Languages*: Python, C/C++, Swift, JavaScript, HTML/CSS, Bash
+- *Languages*: Python, C/C++, TypeScript, Swift, JavaScript, HTML/CSS, Bash
 - *ML / CV*: PyTorch, PyTorch Lightning, OpenCV, CUDA, NumPy, 3D Reconstruction, NeRF, Gaussian Splatting, Scikit-learn, Google Cloud 
 - *Rendering*: Godot, Unreal Engine, Mitsuba, OpenGL, Blender
 - *Tools*: AI-assisted development (Claude Code, Cursor), Git, Docker, Kubernetes, Linux, Weights & Biases, TensorBoard, React, Tailwind CSS
