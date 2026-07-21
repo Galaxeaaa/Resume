@@ -127,7 +127,7 @@
 == Thesis
 
 #publication(
-  title: "Near-Field Lighting Estimation via Ray Regression",
+  title: "Near-Field Lighting Estimation via Ray Regression with vision transformer",
   authors: ("Cheng Wang", "Tzu-mao Li"),
   conference: [_Master Thesis_],
   url: "https://escholarship.org/uc/item/27v4090s",
@@ -206,6 +206,6 @@ Cumulative GPA: 3.9\/4.0, GPA in Major: 4.0\/4.0 \
 == Skills
 - *General*: Data structures and algorithms, Probability and statistics, Linear algebra, Optimization
 - *Languages*: Python, C/C++, TypeScript, Swift, JavaScript, HTML/CSS, Bash
-- *ML / CV*: PyTorch, PyTorch Lightning, OpenCV, CUDA, NumPy, 3D Reconstruction, NeRF, Gaussian Splatting, Scikit-learn, Google Cloud 
+- *ML / CV*: PyTorch, PyTorch Lightning, OpenCV, NumPy, 3D Reconstruction, NeRF, Gaussian Splatting, Scikit-learn, Google Cloud, transformers, vision transformers
 - *Rendering*: Godot, Unreal Engine, Mitsuba, OpenGL, Blender
 - *Tools*: AI-assisted development (Claude Code, Cursor), Git, Docker, Kubernetes, Linux, Weights & Biases, TensorBoard, React, Tailwind CSS
